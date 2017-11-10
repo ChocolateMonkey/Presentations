@@ -11,8 +11,10 @@ git add .
 git status
 git commit -m "adding readme"
 git log
-# git cat-file -p
-&start "C:\Program Files\Git\git-bash.exe"
+#git cat-file -p
+&start "C:\Program Files\Git\git-bash.exe" 
+# assuming that was installed in this place
+
 Set-Content -path ".\ReadMe.md" -Value "# Hello World"
 git status
 git add .
@@ -21,3 +23,4 @@ git commit -m "Adding Hello World Text"
 git log
 git branch
 git checkout -b "newone"
+git branch
