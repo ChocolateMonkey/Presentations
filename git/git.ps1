@@ -5,6 +5,7 @@ if(Test-Path("gitdemo")) {
 }
 mkdir gitdemo
 cd gitdemo
+"Ready!!!!"
 ls
 git init
 ls -Hidden
