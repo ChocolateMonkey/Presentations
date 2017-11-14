@@ -16,14 +16,14 @@ git add .
 git status
 git commit -m "adding readme"
 git log
-New-Item "git" -ItemType Directory | New-Item "git\index.md" -ItemType File
-git add . | git commit -m "adding git index" 
+Set-Content -path ".\ReadMe.md" -Value "# Hello World"
+git add . | git commit -m "Adding Hello World Text"
 git log
 #git cat-file -p
 &start "C:\Program Files\Git\git-bash.exe" 
 # assuming that was installed in this place
-Set-Content -path ".\ReadMe.md" -Value "# Hello World"
-git add . | git commit -m "Adding Hello World Text"
+New-Item "git" -ItemType Directory | New-Item "git\index.md" -ItemType File
+git add . | git commit -m "adding git index" 
 git log
 Write-Host "Stop and talk about Centralisating your DRCS!"
 
