@@ -7,3 +7,6 @@ Test-Path("gitdemo")
 git clone "https://monty.visualstudio.com/DefaultCollection/Work/_git/gitdemo"
 Test-Path("gitdemo")
 cd gitdemo
+Set-Content -Path ".\README.md" -Value "# Goodbye"
+git add . | git commit -m "changed title"
+git push
