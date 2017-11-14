@@ -25,5 +25,5 @@ git log
 Set-Content -path ".\ReadMe.md" -Value "# Hello World"
 git add . | git commit -m "Adding Hello World Text"
 git log
-Write-Host "Stop and talk about Centralisating your DVCS!"
+Write-Host "Stop and talk about Centralisating your DRCS!"
 
